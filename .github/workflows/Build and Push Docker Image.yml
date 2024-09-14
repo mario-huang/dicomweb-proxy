@@ -26,5 +26,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          platforms: linux/amd64,linux/arm64/v8
           tags: mariohuang/dicomweb-proxy:1.11.0
