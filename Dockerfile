@@ -3,8 +3,8 @@ FROM node:20
 WORKDIR /app
 
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt update && apt install -y cmake
-RUN apt clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y cmake
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY . .
 RUN npm install
