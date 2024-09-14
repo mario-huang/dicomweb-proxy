@@ -1,9 +1,9 @@
-FROM oven/bun
+FROM node:20
 
 WORKDIR /app
 
 COPY . .
-RUN bun install
+RUN npm install
 
-ENTRYPOINT ["bun", "run", "start"]
+ENTRYPOINT ["npm", "run", "start"]
 EXPOSE 5000
